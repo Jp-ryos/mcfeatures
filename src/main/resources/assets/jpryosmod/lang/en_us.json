@@ -5,5 +5,11 @@
   "block.jpryosmod.alexandrite_block": "Alexandrite Block",
   "block.jpryosmod.raw_alexandrite_block": "Raw Alexandrite Block",
 
+  "block.jpryosmod.alexandrite_ore": "Alexandrite Ore",
+  "block.jpryosmod.deepslate_alexandrite_ore": "Deepslate Alexandrite Ore",
+  "block.jpryosmod.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
+  "block.jpryosmod.nether_alexandrite_ore": "Nether Alexandrite Ore",
+
+
   "creativetab.tab": "Jpryosmod Tab"
 }
