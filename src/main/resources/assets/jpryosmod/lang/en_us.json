@@ -3,5 +3,7 @@
   "item.jpryosmod.raw_alexandrite": "Raw Alexandrite",
 
   "block.jpryosmod.alexandrite_block": "Alexandrite Block",
-  "block.jpryosmod.raw_alexandrite_block": "Raw Alexandrite Block"
+  "block.jpryosmod.raw_alexandrite_block": "Raw Alexandrite Block",
+
+  "creativetab.tab": "Jpryosmod Tab"
 }
