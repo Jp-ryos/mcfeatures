@@ -2,6 +2,7 @@ package jp.soyr;
 
 import com.mojang.logging.LogUtils;
 import jp.soyr.blocks.JpryosBlocks;
+import jp.soyr.items.JpryosCreativeTabs;
 import jp.soyr.items.JpryosItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -46,6 +47,7 @@ public class JpryosMod {
 
         JpryosItems.register(modEventBus);
         JpryosBlocks.register(modEventBus);
+        JpryosCreativeTabs.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
