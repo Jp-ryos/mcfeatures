@@ -22,6 +22,10 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosItems.RAW_ALEXANDRITE.get());
                         out.accept(JpryosBlocks.ALEXANDRITE_BLOCK.get());
                         out.accept(JpryosBlocks.RAW_ALEXANDRITE_BLOCK.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_ORE.get());
+                        out.accept(JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE.get());
+                        out.accept(JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get());
+                        out.accept(JpryosBlocks.NETHER_ALEXANDRITE_ORE.get());
 
                     }).build());
 
