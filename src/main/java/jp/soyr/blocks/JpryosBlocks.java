@@ -1,6 +1,7 @@
 package jp.soyr.blocks;
 
 import jp.soyr.JpryosMod;
+import jp.soyr.blocks.custom.SoundBlock;
 import jp.soyr.items.JpryosItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -42,6 +43,9 @@ public class JpryosBlocks {
     public static final RegistryObject<Block> END_STONE_ALEXANDRITE_ORE = registerBlock("end_stone_alexandrite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

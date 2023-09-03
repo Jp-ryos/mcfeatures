@@ -28,7 +28,7 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.NETHER_ALEXANDRITE_ORE.get());
-
+                        out.accept(JpryosBlocks.SOUND_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus iEventBus) {
