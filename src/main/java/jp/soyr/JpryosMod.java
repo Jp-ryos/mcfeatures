@@ -38,6 +38,8 @@ public class JpryosMod {
 
     public static final String MODID = "jpryosmod";
 
+    public static final Logger LOGGER = LogUtils.getLogger();
+
     public JpryosMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
