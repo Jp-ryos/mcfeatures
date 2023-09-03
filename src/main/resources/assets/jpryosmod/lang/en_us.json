@@ -1,6 +1,7 @@
 {
   "item.jpryosmod.alexandrite": "Alexandrite",
   "item.jpryosmod.raw_alexandrite": "Raw Alexandrite",
+  "item.jpryosmod.metal_detector": "Metal Detector",
 
   "block.jpryosmod.alexandrite_block": "Alexandrite Block",
   "block.jpryosmod.raw_alexandrite_block": "Raw Alexandrite Block",
@@ -11,5 +12,6 @@
   "block.jpryosmod.nether_alexandrite_ore": "Nether Alexandrite Ore",
 
 
-  "creativetab.tab": "Jpryosmod Tab"
+  "creativetab.tab": "Jpryosmod Tab",
+  "item.jpryosmod.metal_detector.no_valuables": "No Valuables Found!"
 }
