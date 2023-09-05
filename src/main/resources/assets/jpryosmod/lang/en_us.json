@@ -14,5 +14,8 @@
 
   "creativetab.tab": "Jpryosmod Tab",
 
-  "item.jpryosmod.metal_detector.no_valuables": "No Valuables Found!"
+  "item.jpryosmod.metal_detector.no_valuables": "No Valuables Found!",
+  "tooltip.jpryosmod.sound_block": "Plays nice sounds when walking or right-clicking.",
+  "tooltip.jpryosmod.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
+  "tooltip.jpryosmod.metal_detector.tooltip": "Press §eSHIFT§r for more Information"
 }
