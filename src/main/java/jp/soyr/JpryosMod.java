@@ -36,9 +36,9 @@ import org.slf4j.Logger;
 @Mod(JpryosMod.MODID)
 public class JpryosMod {
 
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "jpryosmod";
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public JpryosMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -58,7 +58,6 @@ public class JpryosMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) { }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -66,20 +65,16 @@ public class JpryosMod {
             event.accept(JpryosItems.RAW_ALEXANDRITE);
         }
     }
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-            // Some client setup code
-        }
+        public static void onClientSetup(FMLClientSetupEvent event) { }
     }
 }
