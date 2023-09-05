@@ -21,6 +21,8 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosItems.ALEXANDRITE.get());
                         out.accept(JpryosItems.RAW_ALEXANDRITE.get());
                         out.accept(JpryosItems.METAL_DETECTOR.get());
+                        out.accept(JpryosItems.PEAT_BRICK.get());
+                        out.accept(JpryosItems.KOHLRABI.get());
 
                         out.accept(JpryosBlocks.ALEXANDRITE_BLOCK.get());
                         out.accept(JpryosBlocks.RAW_ALEXANDRITE_BLOCK.get());
