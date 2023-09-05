@@ -23,6 +23,10 @@ public class JpryosItems {
 
     public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
             () -> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
+            () -> new Item(new Item.Properties().food(JpryosModFoodProperties.KOHLRABI)));
+
     public static void register(IEventBus iEventBus) {
         ITEMS.register(iEventBus);
     }
