@@ -1,5 +1,6 @@
 package jp.soyr.items;
 
+import jp.soyr.items.custom.FuelItem;
 import jp.soyr.items.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,8 @@ public class JpryosItems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
 
+    public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
+            () -> new FuelItem(new Item.Properties(), 200));
     public static void register(IEventBus iEventBus) {
         ITEMS.register(iEventBus);
     }
