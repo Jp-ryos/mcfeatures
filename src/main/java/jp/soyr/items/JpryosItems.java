@@ -20,6 +20,9 @@ public class JpryosItems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
 
+    public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
+            () -> new Item(new Item.Properties().food(JpryosModFoodProperties.KOHLRABI)));
+
     public static void register(IEventBus iEventBus) {
         ITEMS.register(iEventBus);
     }
