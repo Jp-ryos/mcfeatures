@@ -53,6 +53,7 @@ public class JpryosBlocks {
                       .strength(5f)
                       .requiresCorrectToolForDrops(),
                   UniformInt.of(2, 5)));
+
   public static final RegistryObject<Block> NETHER_ALEXANDRITE_ORE =
       registerBlock(
           "nether_alexandrite_ore",
@@ -62,6 +63,7 @@ public class JpryosBlocks {
                       .strength(5f)
                       .requiresCorrectToolForDrops(),
                   UniformInt.of(3, 7)));
+
   public static final RegistryObject<Block> DEEPSLATE_ALEXANDRITE_ORE =
       registerBlock(
           "deepslate_alexandrite_ore",
@@ -71,6 +73,7 @@ public class JpryosBlocks {
                       .strength(5f)
                       .requiresCorrectToolForDrops(),
                   UniformInt.of(5, 8)));
+
   public static final RegistryObject<Block> END_STONE_ALEXANDRITE_ORE =
       registerBlock(
           "end_stone_alexandrite_ore",
@@ -80,6 +83,21 @@ public class JpryosBlocks {
                       .strength(5f)
                       .requiresCorrectToolForDrops(),
                   UniformInt.of(3, 6)));
+
+  public static final RegistryObject<Block> ALEXANDRITE_STAIRS =
+      registerBlock(
+          "alexandrite_stairs",
+          () ->
+              new StairBlock(
+                  () -> JpryosBlocks.ALEXANDRITE_BLOCK.get().defaultBlockState(),
+                  BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.METAL)));
+
+  public static final RegistryObject<Block> ALEXANDRITE_SLAB =
+      registerBlock(
+          "alexandrite_slab",
+          () ->
+              new SlabBlock(
+                  BlockBehaviour.Properties.copy(Blocks.GRANITE_SLAB).sound(SoundType.METAL)));
 
   public static final RegistryObject<Block> SOUND_BLOCK =
       registerBlock(

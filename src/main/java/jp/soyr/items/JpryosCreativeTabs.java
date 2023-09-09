@@ -36,6 +36,8 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.NETHER_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.SOUND_BLOCK.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_STAIRS.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_SLAB.get());
                       })
                   .build());
 

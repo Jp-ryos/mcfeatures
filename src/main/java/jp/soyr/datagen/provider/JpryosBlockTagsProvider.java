@@ -35,14 +35,18 @@ public class JpryosBlockTagsProvider extends BlockTagsProvider {
             JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
             JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get(),
             JpryosBlocks.NETHER_ALEXANDRITE_ORE.get(),
-            JpryosBlocks.SOUND_BLOCK.get());
+            JpryosBlocks.SOUND_BLOCK.get(),
+            JpryosBlocks.ALEXANDRITE_STAIRS.get(),
+            JpryosBlocks.ALEXANDRITE_SLAB.get());
 
     this.tag(BlockTags.NEEDS_IRON_TOOL)
         .add(
             JpryosBlocks.ALEXANDRITE_BLOCK.get(),
             JpryosBlocks.RAW_ALEXANDRITE_BLOCK.get(),
             JpryosBlocks.ALEXANDRITE_ORE.get(),
-            JpryosBlocks.SOUND_BLOCK.get());
+            JpryosBlocks.SOUND_BLOCK.get(),
+            JpryosBlocks.ALEXANDRITE_STAIRS.get(),
+            JpryosBlocks.ALEXANDRITE_SLAB.get());
 
     this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
         .add(

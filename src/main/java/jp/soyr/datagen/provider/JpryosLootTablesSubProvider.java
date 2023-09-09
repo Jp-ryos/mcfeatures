@@ -39,6 +39,12 @@ public class JpryosLootTablesSubProvider extends BlockLootSubProvider {
         block ->
             createOreDrop(
                 JpryosBlocks.NETHER_ALEXANDRITE_ORE.get(), JpryosItems.RAW_ALEXANDRITE.get()));
+
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_STAIRS.get());
+
+    this.add(
+        JpryosBlocks.ALEXANDRITE_SLAB.get(),
+        block -> createSlabItemTable(JpryosBlocks.ALEXANDRITE_SLAB.get()));
   }
 
   @Override
