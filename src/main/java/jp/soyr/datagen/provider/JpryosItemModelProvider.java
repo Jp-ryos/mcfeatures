@@ -28,6 +28,28 @@ public class JpryosItemModelProvider extends ItemModelProvider {
     simpleItem(JpryosItems.PEAT_BRICK);
 
     buttonItem(JpryosBlocks.ALEXANDRITE_BUTTON, JpryosBlocks.ALEXANDRITE_BLOCK);
+    fenceItem(JpryosBlocks.ALEXANDRITE_FENCE, JpryosBlocks.ALEXANDRITE_BLOCK);
+    wallItem(JpryosBlocks.ALEXANDRITE_WALL, JpryosBlocks.ALEXANDRITE_BLOCK);
+  }
+
+  public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+    this.withExistingParent(
+            ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+        .texture(
+            "texture",
+            new ResourceLocation(
+                JpryosMod.MODID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+  }
+
+  public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+    this.withExistingParent(
+            ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+        .texture(
+            "wall",
+            new ResourceLocation(
+                JpryosMod.MODID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
   }
 
   public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

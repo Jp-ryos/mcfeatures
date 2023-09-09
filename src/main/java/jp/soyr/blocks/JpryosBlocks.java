@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 import jp.soyr.JpryosMod;
 import jp.soyr.blocks.custom.SoundBlock;
 import jp.soyr.items.JpryosItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -118,6 +119,25 @@ public class JpryosBlocks {
                   BlockSetType.IRON,
                   10,
                   true));
+
+  public static final RegistryObject<Block> ALEXANDRITE_FENCE =
+      registerBlock(
+          "alexandrite_fence",
+          () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+  public static final RegistryObject<Block> ALEXANDRITE_FENCE_GATE =
+      registerBlock(
+          "alexandrite_fence_gate",
+          () ->
+              new FenceGateBlock(
+                  BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),
+                  SoundEvents.FENCE_GATE_OPEN,
+                  SoundEvents.FENCE_GATE_CLOSE));
+
+  public static final RegistryObject<Block> ALEXANDRITE_WALL =
+      registerBlock(
+          "alexandrite_wall",
+          () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
   public static final RegistryObject<Block> SOUND_BLOCK =
       registerBlock(

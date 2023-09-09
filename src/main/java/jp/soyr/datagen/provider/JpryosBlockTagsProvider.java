@@ -53,6 +53,12 @@ public class JpryosBlockTagsProvider extends BlockTagsProvider {
             JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
             JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get(),
             JpryosBlocks.NETHER_ALEXANDRITE_ORE.get());
+
+    this.tag(BlockTags.FENCES).add(JpryosBlocks.ALEXANDRITE_FENCE.get());
+
+    this.tag(BlockTags.WALLS).add(JpryosBlocks.ALEXANDRITE_WALL.get());
+
+    this.tag(BlockTags.FENCE_GATES).add(JpryosBlocks.ALEXANDRITE_FENCE_GATE.get());
   }
 
   @Override
