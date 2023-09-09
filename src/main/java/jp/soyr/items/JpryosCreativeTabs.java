@@ -38,6 +38,8 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosBlocks.SOUND_BLOCK.get());
                         out.accept(JpryosBlocks.ALEXANDRITE_STAIRS.get());
                         out.accept(JpryosBlocks.ALEXANDRITE_SLAB.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_BUTTON.get());
                       })
                   .build());
 

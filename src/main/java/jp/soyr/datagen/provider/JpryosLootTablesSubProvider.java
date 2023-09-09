@@ -45,6 +45,9 @@ public class JpryosLootTablesSubProvider extends BlockLootSubProvider {
     this.add(
         JpryosBlocks.ALEXANDRITE_SLAB.get(),
         block -> createSlabItemTable(JpryosBlocks.ALEXANDRITE_SLAB.get()));
+
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_BUTTON.get());
   }
 
   @Override
