@@ -3,6 +3,8 @@
     "jpryosmod:alexandrite_block",
     "jpryosmod:raw_alexandrite_block",
     "jpryosmod:alexandrite_ore",
-    "jpryosmod:sound_block"
+    "jpryosmod:sound_block",
+    "jpryosmod:alexandrite_stairs",
+    "jpryosmod:alexandrite_slab"
   ]
 }

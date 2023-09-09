@@ -6,6 +6,8 @@
     "jpryosmod:deepslate_alexandrite_ore",
     "jpryosmod:end_stone_alexandrite_ore",
     "jpryosmod:nether_alexandrite_ore",
-    "jpryosmod:sound_block"
+    "jpryosmod:sound_block",
+    "jpryosmod:alexandrite_stairs",
+    "jpryosmod:alexandrite_slab"
   ]
 }

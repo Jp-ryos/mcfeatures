@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "jpryosmod:block/alexandrite_block",
+    "side": "jpryosmod:block/alexandrite_block",
+    "top": "jpryosmod:block/alexandrite_block"
+  }
+}
