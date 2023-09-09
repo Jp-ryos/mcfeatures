@@ -1,0 +1,8 @@
+// 1.20.1	2023-09-09T11:30:55.5630695	Loot Tables
+b490fb833c1efb22145059f590d97af442ff3053 data/jpryosmod/loot_tables/blocks/alexandrite_block.json
+61511a0ffa9506fbc0a7f7bbdcfd17965f5ebc91 data/jpryosmod/loot_tables/blocks/alexandrite_ore.json
+0cd31412e2286bac3a83f77bd9b05604be1ac02b data/jpryosmod/loot_tables/blocks/deepslate_alexandrite_ore.json
+0ffcbf44677e146a3a11d7216aa139d21b76354a data/jpryosmod/loot_tables/blocks/end_stone_alexandrite_ore.json
+6db7a411f49639866c05520c2777ea4ea326a865 data/jpryosmod/loot_tables/blocks/nether_alexandrite_ore.json
+a8c8d6ce2f3c6453bd91fb6529cce1610737dd6d data/jpryosmod/loot_tables/blocks/raw_alexandrite_block.json
+298548e4c6950295b86eaa09d3ba02c54007e93b data/jpryosmod/loot_tables/blocks/sound_block.json

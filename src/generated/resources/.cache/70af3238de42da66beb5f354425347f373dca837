@@ -1,0 +1,5 @@
+// 1.20.1	2023-09-09T11:30:55.5630695	Block Tags
+089fa5d32ed7877cb4873b422b08b312b90cde8f data/jpryosmod/tags/blocks/metal_detector_valuable.json
+099df1b2a1e530cf2f1ba6fb1995452cb43365a6 data/minecraft/tags/blocks/mineable/pickaxe.json
+d8e8ca7946e470d5025f91abdab09b3d2d4fce70 data/minecraft/tags/blocks/needs_diamond_tool.json
+216fa20edd03e6c2855c64e152b7d863144ea758 data/minecraft/tags/blocks/needs_iron_tool.json

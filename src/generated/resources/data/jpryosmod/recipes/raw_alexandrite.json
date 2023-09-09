@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "alexandrite",
+  "key": {
+    "#": {
+      "item": "jpryosmod:raw_alexandrite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "jpryosmod:raw_alexandrite_block"
+  },
+  "show_notification": true
+}
