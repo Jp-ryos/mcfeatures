@@ -1,13 +1,16 @@
 package jp.soyr.datagen.provider;
 
 import jp.soyr.JpryosMod;
+import jp.soyr.blocks.JpryosBlocks;
 import jp.soyr.items.JpryosItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class JpryosItemModelProvider extends ItemModelProvider {
@@ -23,6 +26,18 @@ public class JpryosItemModelProvider extends ItemModelProvider {
     simpleItem(JpryosItems.KOHLRABI);
     simpleItem(JpryosItems.METAL_DETECTOR);
     simpleItem(JpryosItems.PEAT_BRICK);
+
+    buttonItem(JpryosBlocks.ALEXANDRITE_BUTTON, JpryosBlocks.ALEXANDRITE_BLOCK);
+  }
+
+  public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+    this.withExistingParent(
+            ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+        .texture(
+            "texture",
+            new ResourceLocation(
+                JpryosMod.MODID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
   }
 
   private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -4,9 +4,7 @@ import java.util.Objects;
 import jp.soyr.JpryosMod;
 import jp.soyr.blocks.JpryosBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -39,8 +37,16 @@ public class JpryosBlockStateProvider extends BlockStateProvider {
         blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()),
         blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
 
+    buttonBlock(
+        (ButtonBlock) JpryosBlocks.ALEXANDRITE_BUTTON.get(),
+        blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
+    pressurePlateBlock(
+        (PressurePlateBlock) JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get(),
+        blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
+
     blockItem(JpryosBlocks.ALEXANDRITE_STAIRS);
     blockItem(JpryosBlocks.ALEXANDRITE_SLAB);
+    blockItem(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE);
   }
 
   private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

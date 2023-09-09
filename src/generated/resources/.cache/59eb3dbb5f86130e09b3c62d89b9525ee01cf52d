@@ -1,6 +1,8 @@
-// 1.20.1	2023-09-09T18:12:33.3313051	Loot Tables
+// 1.20.1	2023-09-09T22:43:02.6396762	Loot Tables
 b490fb833c1efb22145059f590d97af442ff3053 data/jpryosmod/loot_tables/blocks/alexandrite_block.json
+98fec3f741d0e858bc2672664dfd7f1e03c5cddb data/jpryosmod/loot_tables/blocks/alexandrite_button.json
 61511a0ffa9506fbc0a7f7bbdcfd17965f5ebc91 data/jpryosmod/loot_tables/blocks/alexandrite_ore.json
+a4741e45cd9a25bbcd3da8811b74eb24adf5a4be data/jpryosmod/loot_tables/blocks/alexandrite_pressure_plate.json
 dbc90e68e4856aacf4f50be9a882ab8628333ab5 data/jpryosmod/loot_tables/blocks/alexandrite_slab.json
 3fb2ea690427435c54535ac1421ccc8661295233 data/jpryosmod/loot_tables/blocks/alexandrite_stairs.json
 0cd31412e2286bac3a83f77bd9b05604be1ac02b data/jpryosmod/loot_tables/blocks/deepslate_alexandrite_ore.json
