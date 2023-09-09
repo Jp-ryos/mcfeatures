@@ -54,14 +54,37 @@ public class JpryosBlockStateProvider extends BlockStateProvider {
         (WallBlock) JpryosBlocks.ALEXANDRITE_WALL.get(),
         blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
 
+    doorBlockWithRenderType(
+      (DoorBlock) JpryosBlocks.ALEXANDRITE_DOOR.get(),
+      modLoc("block/alexandrite_door_bottom"),
+      modLoc("block/alexandrite_door_top"),
+      "cutout");
+    trapdoorBlockWithRenderType(
+      (TrapDoorBlock) JpryosBlocks.ALEXANDRITE_TRAPDOOR.get(),
+      modLoc("block/alexandrite_trapdoor"),
+      true,
+      "cutout");
+
     blockItem(JpryosBlocks.ALEXANDRITE_STAIRS);
     blockItem(JpryosBlocks.ALEXANDRITE_SLAB);
     blockItem(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE);
     blockItem(JpryosBlocks.ALEXANDRITE_FENCE_GATE);
+    blockItem(JpryosBlocks.ALEXANDRITE_TRAPDOOR, "_bottom");
+
+
   }
 
   private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
     simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+  }
+
+  private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix) {
+    simpleBlockItem(
+        blockRegistryObject.get(),
+        new ModelFile.UncheckedModelFile(
+            "jpryosmod:block/"
+                + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()
+                + appendix));
   }
 
   private void blockItem(RegistryObject<Block> blockRegistryObject) {
