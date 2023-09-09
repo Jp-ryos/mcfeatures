@@ -1,7 +1,7 @@
 package jp.soyr.datagen;
 
 import jp.soyr.JpryosMod;
-import jp.soyr.provider.*;
+import jp.soyr.datagen.provider.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

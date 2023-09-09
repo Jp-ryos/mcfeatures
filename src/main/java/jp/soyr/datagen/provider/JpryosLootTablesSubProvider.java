@@ -1,6 +1,5 @@
-package jp.soyr.datagen.loot;
+package jp.soyr.datagen.provider;
 
-import jp.soyr.JpryosMod;
 import jp.soyr.blocks.JpryosBlocks;
 import jp.soyr.items.JpryosItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -11,8 +10,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 
-public class JpryosLootTables extends BlockLootSubProvider {
-    public JpryosLootTables() {
+public class JpryosLootTablesSubProvider extends BlockLootSubProvider {
+    public JpryosLootTablesSubProvider() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 

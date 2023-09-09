@@ -1,6 +1,5 @@
-package jp.soyr.provider;
+package jp.soyr.datagen.provider;
 
-import jp.soyr.datagen.loot.JpryosLootTables;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
@@ -11,6 +10,6 @@ import java.util.Set;
 public class JpryosLootTablesProvider {
     public static LootTableProvider create(PackOutput packOutput) {
         return new LootTableProvider(packOutput, Set.of(), List.of(new LootTableProvider.SubProviderEntry(
-                JpryosLootTables::new, LootContextParamSets.BLOCK)));
+                JpryosLootTablesSubProvider::new, LootContextParamSets.BLOCK)));
     }
 }

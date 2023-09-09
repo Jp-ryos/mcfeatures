@@ -1,4 +1,4 @@
-package jp.soyr.provider;
+package jp.soyr.datagen.provider;
 
 import jp.soyr.JpryosMod;
 import jp.soyr.blocks.JpryosBlocks;

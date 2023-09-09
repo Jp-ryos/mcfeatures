@@ -1,4 +1,4 @@
-package jp.soyr.provider;
+package jp.soyr.datagen.provider;
 
 import com.mojang.datafixers.types.templates.Hook;
 import jp.soyr.JpryosMod;
