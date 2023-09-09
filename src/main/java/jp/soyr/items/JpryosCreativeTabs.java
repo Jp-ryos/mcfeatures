@@ -40,6 +40,9 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosBlocks.ALEXANDRITE_SLAB.get());
                         out.accept(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
                         out.accept(JpryosBlocks.ALEXANDRITE_BUTTON.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_FENCE.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_FENCE_GATE.get());
+                        out.accept(JpryosBlocks.ALEXANDRITE_WALL.get());
                       })
                   .build());
 

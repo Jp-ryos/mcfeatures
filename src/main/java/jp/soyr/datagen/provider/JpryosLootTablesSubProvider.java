@@ -48,6 +48,9 @@ public class JpryosLootTablesSubProvider extends BlockLootSubProvider {
 
     this.dropSelf(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
     this.dropSelf(JpryosBlocks.ALEXANDRITE_BUTTON.get());
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_FENCE.get());
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_FENCE_GATE.get());
+    this.dropSelf(JpryosBlocks.ALEXANDRITE_WALL.get());
   }
 
   @Override

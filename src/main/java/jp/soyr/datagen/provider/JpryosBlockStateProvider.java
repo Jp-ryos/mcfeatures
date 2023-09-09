@@ -44,9 +44,20 @@ public class JpryosBlockStateProvider extends BlockStateProvider {
         (PressurePlateBlock) JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE.get(),
         blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
 
+    fenceBlock(
+        (FenceBlock) JpryosBlocks.ALEXANDRITE_FENCE.get(),
+        blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
+    fenceGateBlock(
+        (FenceGateBlock) JpryosBlocks.ALEXANDRITE_FENCE_GATE.get(),
+        blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
+    wallBlock(
+        (WallBlock) JpryosBlocks.ALEXANDRITE_WALL.get(),
+        blockTexture(JpryosBlocks.ALEXANDRITE_BLOCK.get()));
+
     blockItem(JpryosBlocks.ALEXANDRITE_STAIRS);
     blockItem(JpryosBlocks.ALEXANDRITE_SLAB);
     blockItem(JpryosBlocks.ALEXANDRITE_PRESSURE_PLATE);
+    blockItem(JpryosBlocks.ALEXANDRITE_FENCE_GATE);
   }
 
   private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
