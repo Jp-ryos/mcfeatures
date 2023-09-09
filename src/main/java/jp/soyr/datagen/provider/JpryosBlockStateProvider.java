@@ -27,6 +27,6 @@ public class JpryosBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }
