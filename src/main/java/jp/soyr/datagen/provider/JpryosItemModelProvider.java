@@ -11,23 +11,22 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 public class JpryosItemModelProvider extends ItemModelProvider {
-    public JpryosItemModelProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
-        super(packOutput, JpryosMod.MODID, existingFileHelper);
-    }
+  public JpryosItemModelProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
+    super(packOutput, JpryosMod.MODID, existingFileHelper);
+  }
 
+  @Override
+  protected void registerModels() {
+    simpleItem(JpryosItems.ALEXANDRITE);
+    simpleItem(JpryosItems.RAW_ALEXANDRITE);
 
-    @Override
-    protected void registerModels() {
-        simpleItem(JpryosItems.ALEXANDRITE);
-        simpleItem(JpryosItems.RAW_ALEXANDRITE);
+    simpleItem(JpryosItems.KOHLRABI);
+    simpleItem(JpryosItems.METAL_DETECTOR);
+    simpleItem(JpryosItems.PEAT_BRICK);
+  }
 
-        simpleItem(JpryosItems.KOHLRABI);
-        simpleItem(JpryosItems.METAL_DETECTOR);
-        simpleItem(JpryosItems.PEAT_BRICK);
-    }
-
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
-                .texture("layer0", new ResourceLocation(JpryosMod.MODID, "item/" + item.getId().getPath()));
-    }
+  private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
+    return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
+        .texture("layer0", new ResourceLocation(JpryosMod.MODID, "item/" + item.getId().getPath()));
+  }
 }
