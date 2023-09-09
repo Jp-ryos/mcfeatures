@@ -1,4 +1,11 @@
-// 1.20.1	2023-09-09T11:30:55.5610701	Block States: jpryosmod
+// 1.20.1	2023-09-09T12:48:27.1441107	Block States: jpryosmod
+3170125f679c4ca871b23156a9c0463b8448a998 assets/jpryosmod/blockstates/alexandrite_block.json
+7dfa567949dccc1b66d8af6124abc8c577065532 assets/jpryosmod/blockstates/alexandrite_ore.json
+6a869186332dcd6988e75bf5d28b0a30ee221f84 assets/jpryosmod/blockstates/deepslate_alexandrite_ore.json
+a09dadbcb23a396d761c5ade723b44cb39af8f83 assets/jpryosmod/blockstates/end_stone_alexandrite_ore.json
+b5a2716a8e756b48443f6487360b627d57a8c032 assets/jpryosmod/blockstates/nether_alexandrite_ore.json
+76679f8afd5b0843813731498097ef09a4aaece7 assets/jpryosmod/blockstates/raw_alexandrite_block.json
+b9d9b963529858b504b504a23d439a623d32408c assets/jpryosmod/blockstates/sound_block.json
 6ede1d8d6a8ffe7c7431d49896e165a30538644b assets/jpryosmod/models/block/alexandrite_block.json
 3aff27625fd1e5ece7179fccbdebce1abee2accb assets/jpryosmod/models/block/alexandrite_ore.json
 0b9c61e5c0a6e1e24d9471934498d9f08237b84b assets/jpryosmod/models/block/deepslate_alexandrite_ore.json

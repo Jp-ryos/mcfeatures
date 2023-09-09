@@ -1,4 +1,4 @@
-package jp.soyr.provider;
+package jp.soyr.datagen.provider;
 
 import jp.soyr.JpryosMod;
 import jp.soyr.blocks.JpryosBlocks;
@@ -27,6 +27,6 @@ public class JpryosBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }
