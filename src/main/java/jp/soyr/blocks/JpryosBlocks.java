@@ -139,6 +139,19 @@ public class JpryosBlocks {
           "alexandrite_wall",
           () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+  public static final RegistryObject<Block> ALEXANDRITE_DOOR =
+      registerBlock(
+          "alexandrite_door",
+          () ->
+              new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON));
+
+  public static final RegistryObject<Block> ALEXANDRITE_TRAPDOOR =
+      registerBlock(
+          "alexandrite_trapdoor",
+          () ->
+              new TrapDoorBlock(
+                  BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON));
+
   public static final RegistryObject<Block> SOUND_BLOCK =
       registerBlock(
           "sound_block", () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));

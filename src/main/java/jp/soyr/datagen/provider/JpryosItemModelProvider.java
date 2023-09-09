@@ -30,6 +30,8 @@ public class JpryosItemModelProvider extends ItemModelProvider {
     buttonItem(JpryosBlocks.ALEXANDRITE_BUTTON, JpryosBlocks.ALEXANDRITE_BLOCK);
     fenceItem(JpryosBlocks.ALEXANDRITE_FENCE, JpryosBlocks.ALEXANDRITE_BLOCK);
     wallItem(JpryosBlocks.ALEXANDRITE_WALL, JpryosBlocks.ALEXANDRITE_BLOCK);
+
+    simpleBlockItem(JpryosBlocks.ALEXANDRITE_DOOR);
   }
 
   public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
@@ -65,5 +67,10 @@ public class JpryosItemModelProvider extends ItemModelProvider {
   private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
     return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated"))
         .texture("layer0", new ResourceLocation(JpryosMod.MODID, "item/" + item.getId().getPath()));
+  }
+
+  private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+    return withExistingParent(item.getId().getPath(), new ResourceLocation("item/generated")).texture("layer0",
+      new ResourceLocation(JpryosMod.MODID, "item/" + item.getId().getPath()));
   }
 }
