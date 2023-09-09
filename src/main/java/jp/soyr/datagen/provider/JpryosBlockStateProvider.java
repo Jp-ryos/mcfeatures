@@ -10,23 +10,24 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class JpryosBlockStateProvider extends BlockStateProvider {
 
-    public JpryosBlockStateProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
-        super(packOutput, JpryosMod.MODID, existingFileHelper);
-    }
-    @Override
-    protected void registerStatesAndModels() {
-        blockWithItem(JpryosBlocks.ALEXANDRITE_BLOCK);
-        blockWithItem(JpryosBlocks.RAW_ALEXANDRITE_BLOCK);
+  public JpryosBlockStateProvider(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
+    super(packOutput, JpryosMod.MODID, existingFileHelper);
+  }
 
-        blockWithItem(JpryosBlocks.ALEXANDRITE_ORE);
-        blockWithItem(JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE);
-        blockWithItem(JpryosBlocks.END_STONE_ALEXANDRITE_ORE);
-        blockWithItem(JpryosBlocks.NETHER_ALEXANDRITE_ORE);
+  @Override
+  protected void registerStatesAndModels() {
+    blockWithItem(JpryosBlocks.ALEXANDRITE_BLOCK);
+    blockWithItem(JpryosBlocks.RAW_ALEXANDRITE_BLOCK);
 
-        blockWithItem(JpryosBlocks.SOUND_BLOCK);
-    }
+    blockWithItem(JpryosBlocks.ALEXANDRITE_ORE);
+    blockWithItem(JpryosBlocks.DEEPSLATE_ALEXANDRITE_ORE);
+    blockWithItem(JpryosBlocks.END_STONE_ALEXANDRITE_ORE);
+    blockWithItem(JpryosBlocks.NETHER_ALEXANDRITE_ORE);
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
-    }
+    blockWithItem(JpryosBlocks.SOUND_BLOCK);
+  }
+
+  private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+  }
 }

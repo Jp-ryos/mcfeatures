@@ -11,13 +11,18 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 public class JpryosCreativeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JpryosMod.MODID);
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JpryosMod.MODID);
 
-    public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(JpryosItems.ALEXANDRITE.get()))
-                    .title(Component.translatable("creativetab.tab"))
-                    .displayItems((displayParams, out) -> {
+  public static final RegistryObject<CreativeModeTab> TAB =
+      CREATIVE_MODE_TABS.register(
+          "tab",
+          () ->
+              CreativeModeTab.builder()
+                  .icon(() -> new ItemStack(JpryosItems.ALEXANDRITE.get()))
+                  .title(Component.translatable("creativetab.tab"))
+                  .displayItems(
+                      (displayParams, out) -> {
                         out.accept(JpryosItems.ALEXANDRITE.get());
                         out.accept(JpryosItems.RAW_ALEXANDRITE.get());
                         out.accept(JpryosItems.METAL_DETECTOR.get());
@@ -31,9 +36,10 @@ public class JpryosCreativeTabs {
                         out.accept(JpryosBlocks.END_STONE_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.NETHER_ALEXANDRITE_ORE.get());
                         out.accept(JpryosBlocks.SOUND_BLOCK.get());
-                    }).build());
+                      })
+                  .build());
 
-    public static void register(IEventBus iEventBus) {
-        CREATIVE_MODE_TABS.register(iEventBus);
-    }
+  public static void register(IEventBus iEventBus) {
+    CREATIVE_MODE_TABS.register(iEventBus);
+  }
 }
